@@ -11,6 +11,11 @@ pipeline {
     }
 
     stages {
+        stage('git checkout') {
+            steps {
+                checkout scm
+            }
+        }
         stage('mvn build') {
             steps {
                 sh 'mvn clean package'
