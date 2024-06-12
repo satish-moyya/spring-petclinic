@@ -28,7 +28,7 @@ pipeline {
                     mvn clean verify sonar:sonar \
                     -Dsonar.projectKey=spc \
                     -Dsonar.projectName='spc' \
-                    -Dsonar.host.url=http://34.125.145.8:9000 \
+                    -Dsonar.host.url=https://34.125.145.8:9000 \
                     -Dsonar.token=squ_ef5d4cb7f5a3b8ef4c273851b7067276b858b9b8
                     '''
                 }
