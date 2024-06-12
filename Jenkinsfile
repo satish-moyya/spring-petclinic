@@ -26,10 +26,10 @@ pipeline {
                 withSonarQubeEnv('Sonar') {
                     sh '''
                     mvn clean verify sonar:sonar \
-                    -Dsonar.projectKey=spc \
-                    -Dsonar.projectName='spc' \
-                    -Dsonar.host.url=https://34.125.145.8:9000 \
-                    -Dsonar.token=squ_ef5d4cb7f5a3b8ef4c273851b7067276b858b9b8
+                   -Dsonar.projectKey=demo \
+                   -Dsonar.projectName='demo' \
+                   -Dsonar.host.url=http://34.125.145.8:9000 \
+                   -Dsonar.token=sqp_4c557aac2eca5df90e35ae1c7e3b8bbc925e2ada
                     '''
                 }
             }
