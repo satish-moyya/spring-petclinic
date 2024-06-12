@@ -11,11 +11,6 @@ pipeline {
     }
 
     stages {
-        stage('git checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/satishmoyya/spring-petclinic.git'
-            }
-        }
         stage('mvn build') {
             steps {
                 sh 'mvn clean package'
